@@ -1,0 +1,14 @@
+{% extends 'root.html' %}
+
+{% block title %}
+  Peoples list
+{% endblock %}
+
+{% block main %}
+  <h1>Peoples with Rank</h1>
+  <ul>
+    {% for person in peoples %}
+      <li>{{  person.rank }} {{ person.full_name }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
